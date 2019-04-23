@@ -1,11 +1,11 @@
 # easyapi_go
 EasyOps OpenAPI SDK by Golang
 
-##1.结构说明
+1.结构说明
 easyapi包为核心包，main中为使用示例
 
 
-##2.SDK介绍
+2.SDK介绍
 
 函数名	|输入	|输出	|说明
 --|--|---|--
@@ -14,7 +14,7 @@ NewEasyapi()|cmdbAddr string：cmdb地址<br>ak sk string：API用户的key值|*
 (ez *Easyapi) ChangeListToMap	|srcList []map[string]interface{} GetAllInstance方法返回的实例列表<br>keys []string 用作唯一键的属性名，空的话会选择isntanceId，多于两个会用&#124拼接|map[string]interface{}, bool<br>第一个：以keys值为键的字典<br>第二个：成功标志位|公有方法，把字典列表变成字典（选定键值）
 (ez *Easyapi) SendRequest|reqUrl string, 请求URL路径<br>method string, 请求方法GET DELETE POST PUT<br>params map[string]interface{} http请求参数|string, bool<br>第一个：http请求返回结果<br>第二个：成功标志位|公有方法，通用的http请求函数
 
-##3.使用说明
+3.使用说明
 例子1：
 
 POST请求
