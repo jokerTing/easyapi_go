@@ -6,7 +6,7 @@ import (
 )
 
 func main(){
-	var easyApi = easyapi.NewEasyapi("10.2.148.180", "118a03c99886a3d51af8f5c6", "171cd4a4b5d5d2051e9de97bdf15e908d22f1d55fa6656f91f48ffe4a8d4f5eb")
+	var easyApi = easyapi.NewEasyapi("here is ip", "here is ak", "here is sk")
     // POST request
     fmt.Println("-------POST EXAMPLE-------")
     fieldInPostData := map[string]int{"ip": 1, "hostname": 1, "owner.name": 1, "VMHOSTHARDWAREBASIC.name": 1,
